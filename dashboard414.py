@@ -257,7 +257,7 @@ with tab1:
                     "% High Risk CAs":         "{:.0%}",
                     "Fill Rate":               "{:.1%}",
                 })
-                .applymap(
+                .map(
                     lambda v: "color: #E24B4A" if v == "Under"
                          else "color: #1D9E75" if v == "On Track"
                          else "color: #BA7517",
@@ -306,7 +306,7 @@ with tab1:
                     "Expected (x survival)":   "{:.1f}",
                     "CA Drop Rate":            "{:.1%}",
                 })
-                .applymap(
+                .map(
                     lambda v: "color: #E24B4A" if v == "High"
                          else "color: #1D9E75" if v == "Low"
                          else "color: #BA7517",
@@ -379,7 +379,7 @@ with tab2:
                 "Avg_Survival":             "{:.1%}",
                 "Avg_Participating_per_CA": "{:.1f}",
             })
-            .applymap(
+            .map(
                 lambda v: "color: #E24B4A" if v == "High"
                      else "color: #1D9E75" if v == "Low"
                      else "color: #BA7517",
