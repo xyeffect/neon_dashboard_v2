@@ -403,7 +403,7 @@ with tab2:
         st.dataframe(
             conversion_df.style
             .format({"Offer Conversion Rate": "{:.1%}"})
-            .applymap(
+            .map(
                 lambda v: "color: #E24B4A" if v == "High"
                      else "color: #1D9E75" if v == "Low"
                      else "color: #BA7517",
